@@ -87,17 +87,6 @@
 
 
 
-;;; EMACS LISP MODE HOOKS
-(defun elisp-mode-hooks ()
-  "lisp-mode-hooks"
-  (when (require 'eldoc nil t)
-    (setq eldoc-idle-delay 0.2)
-    (setq eldoc-echo-area-use-multiline-p t)
-    (turn-on-eldoc-mode)))
-(add-hook 'emacs-lisp-mode-hook 'elisp-mode-hooks)
-
-
-
 ;;; OTHER PKGS
 ;; edit something searched by grep
 (require 'wgrep nil t)
@@ -116,3 +105,33 @@
 	(if window-system
 			(define-key elscreen-map (kbd "C-z") 'iconify-or-deiconify-frame)
 		(define-key elscreen-map (kbd "C-z") 'suspend-emacs)))
+
+;; emacs lisp mode hooks
+(defun elisp-mode-hooks ()
+  "lisp-mode-hooks"
+  (when (require 'eldoc nil t)
+    (setq eldoc-idle-delay 0.2)
+    (setq eldoc-echo-area-use-multiline-p t)
+    (turn-on-eldoc-mode)))
+(add-hook 'emacs-lisp-mode-hook 'elisp-mode-hooks)
+
+;; web-mode
+(when (require 'web-mode nil t)
+	(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+	(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+	(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+	(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+	(add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+	(defun web-mode-hooks ()
+		"web-mode-hooks"
+		(setq web-mode-markup-indent-offset 2)
+		(setq web-mode-code-indent-offset 2)
+		(setq web-mode-css-indent-offset 2)
+		(setq web-mode-style-padding 0)
+		(setq web-mode-script-padding 0))
+	(add-hook 'web-mode-hook 'web-mode-hooks))
+
+;; typescript-mode
+(when (require 'typescript-mode nil t)
+	(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+	(add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode)))
