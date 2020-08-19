@@ -1,3 +1,11 @@
+;;; 10-style.el --- Styles for Emacs.
+
+;;; Commentary:
+;; This file provides style settings.
+;; Packages:
+;;   ample-zen
+
+;;; Code:
 ;; theme
 (load-theme 'ample-zen t)
 
@@ -17,3 +25,6 @@
 
 ;; indent
 (setq-default tab-width 2)
+
+(provide '10-style)
+;;; 10-style.el ends here

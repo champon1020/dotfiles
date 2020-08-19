@@ -1,4 +1,9 @@
-;; backup
+;;; 02-util.el --- Utilities.
+
+;;; Commentary:
+;; This file provides some settings.
+
+;;; Code:
 (add-to-list 'backup-directory-alist (cons "."  "~/.emacs.d/backups/"))
 
 ;; auto save
@@ -19,3 +24,6 @@
 
 ;; hide startup page
 (setq inhibit-startup-screen t)
+
+(provide '02-util.el)
+;;; 02-util.el ends here

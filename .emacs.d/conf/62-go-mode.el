@@ -1,8 +1,14 @@
+;;; 62-go-mode.el --- go mode
+
+;;; Commentary:
+;; This file provides go mode settings.
+
+;;; Code:
 ;; go-mode
 (when (require 'go-mode nil t)
 	(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 	(defun go-mode-hooks ()
-		"go-mode-hooks"
+		"Hooks for go mode"
 		(setq tab-width 4)
 		(setq c-basic-offset 4)
 		(setq gofmt-command "goimports")
@@ -17,3 +23,6 @@
 (when (require 'go-autocomplete nil t)
 	(custom-set-variables
 	 '(ac-go-expand-arguments-into-snippets nil)))
+
+(provide '62-go-mode)
+;;; 62-go-mode.el ends here

@@ -1,3 +1,9 @@
+;;; 01-base.el --- Basic setting
+
+;;; Commentary:
+;; This file profides basic settings.
+
+;;; Code:
 ;; split custom file to .emacs.d/conf/custom.el
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (unless (file-exists-p custom-file)
@@ -18,3 +24,6 @@
  '("marmalade" . "https://marmalade-repo.org/packages/"))
 
 (package-initialize)
+
+(provide '01-base)
+;;; 01-base.el ends here
