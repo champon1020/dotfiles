@@ -1,10 +1,6 @@
 ;; theme
 (load-theme 'ample-zen t)
 
-;; keybinds
-(define-key global-map (kbd "C-t") 'other-window)
-(define-key global-map (kbd "C-c l") 'toggle-truncate-lines)
-
 ;; add column number
 (column-number-mode t)
 

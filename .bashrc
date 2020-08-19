@@ -77,7 +77,6 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias npms='sudo npm start'
 alias yarns='sudo yarn start'
-alias keio='ssh ub259863@logex01.educ.cc.keio.ac.jp'
 alias swg-gen='sh /opt/swagger-codegen/exec.sh'
 alias opn-gen='sh /opt/openapi-generator/exec.sh'
 alias emacs="emacs -nw"
@@ -100,12 +99,6 @@ else
   PATH=${_p%:*:}
   unset -v _p
 fi
-
-# gcp path
-export GOOGLE_APPLICATION_CREDENTIALS="/home/champon1020/Documents/keys/gcp/firebase/champon-myblog-6111e7e563e3.json"
-
-# change stack size
-ulimit -s 1073741824
 
 # golang path
 export GOPATH="/home/champon1020/repos/go"

@@ -9,4 +9,11 @@
 		(add-hook 'before-save-hook 'gofmt-before-save)
 		(local-set-key (kbd "M-.") 'godef-jump)
 		(local-set-key (kbd "C-c C-a") 'go-import-add))
-	(add-hook 'go-mode-hook 'go-mode-hooks))
+	(add-hook 'go-mode-hook 'go-mode-hooks)
+	(when (require 'go-eldoc nil t)
+		(add-hook 'go-mode-hook 'go-eldoc-setup)))
+
+;; go-eldoc
+(when (require 'go-autocomplete nil t)
+	(custom-set-variables
+	 '(ac-go-expand-arguments-into-snippets nil)))
