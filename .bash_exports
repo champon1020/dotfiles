@@ -1,0 +1,13 @@
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# golang path
+export GOPATH="/home/champon1020/repos/go"
+export GOROOT="/usr/local/go"
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# matlab path
+export PATH=~/matlab/bin:$PATH
+
+# conda bin path
+export PATH=~/anaconda3/bin:$PATH
