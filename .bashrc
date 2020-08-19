@@ -100,3 +100,23 @@ else
   PATH=${_p%:*:}
   unset -v _p
 fi
+
+# gcp path
+export GOOGLE_APPLICATION_CREDENTIALS="/home/champon1020/Documents/keys/gcp/firebase/champon-myblog-6111e7e563e3.json"
+
+# change stack size
+ulimit -s 1073741824
+
+# golang path
+export GOPATH="/home/champon1020/repos/go"
+export GOROOT="/usr/local/go"
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# matlab path
+export PATH=~/matlab/bin:$PATH
+
+# conda bin path
+export PATH=~/anaconda3/bin:$PATH
+
+# fanatio path
+export FANATIO_PATH="papers"
