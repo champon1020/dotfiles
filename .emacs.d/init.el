@@ -1,4 +1,9 @@
-;;; INITIAL SETTINGS
+;;; init.el --- INITIAL SETTINGS
+
+;;; Commentary:
+;; This file provides initial settings.
+
+;;; Code:
 ;; add load-path
 (defun add-to-load-path (&rest paths)
   (let (path)
@@ -13,3 +18,6 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init t)
 (init-loader-load "~/.emacs.d/conf")
+
+(provide 'init)
+;;; init.el ends here
