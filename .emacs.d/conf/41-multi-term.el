@@ -9,7 +9,8 @@
 (when (require 'multi-term nil t)
 	(defun term-mode-hooks ()
 		"term-mode-hooks"
-		(global-unset-key (kbd "C-c"))
+		(delete "C-c" term-unbind-key-list)
+		(delete "C-x" term-unbind-key-list)
 		(message "%s" "term-mode-hooks is enabled."))
 	(add-hook 'term-mode-hook 'term-mode-hooks))
 
