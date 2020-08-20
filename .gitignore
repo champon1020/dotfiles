@@ -3,3 +3,4 @@
 .emacs.d/undohist
 .emacs.d/network-security.data
 .emacs.d/backups
+.emacs.d/auto-save-list

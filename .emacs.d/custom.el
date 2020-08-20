@@ -11,7 +11,7 @@
 		("c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default)))
  '(package-selected-packages
 	 (quote
-		(flycheck go-eldoc go-autocomplete go-mode typescript-mode vue-mode yaml-mode web-mode elscreen undo-tree undohist wgrep auto-complete ample-zen-theme multi-term))))
+		(dockerfile-mode markdown-mode dired-quick-sort flycheck go-eldoc go-autocomplete go-mode typescript-mode vue-mode yaml-mode web-mode elscreen undo-tree undohist wgrep auto-complete ample-zen-theme multi-term))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
