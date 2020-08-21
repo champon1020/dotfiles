@@ -23,6 +23,10 @@
  'package-archives
  '("marmalade" . "https://marmalade-repo.org/packages/"))
 
+;; set meta key to 'Command' on Mac
+(when (eq system-type 'darwin)
+  (setq ns-command-modifier (quote meta)))
+
 (package-initialize)
 
 (provide '01-base)
