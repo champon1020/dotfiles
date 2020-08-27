@@ -24,6 +24,8 @@
 - cc-mode
 - asm-mode
 - typescript-mode
+- python-mode
+  - python-black
 - markdown-mode
   - markdown-preview-mode
 - yaml-mode
