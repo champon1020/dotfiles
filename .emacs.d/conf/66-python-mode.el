@@ -1,6 +1,6 @@
 ;;; 66-python-mode.el --- python mode
 
-;;; Commentary
+;;; Commentary:
 ;; This file provides python mode settings.
 
 ;;; Code:
@@ -11,7 +11,7 @@
 		(when (require 'blacken nil t)
 			(blacken-mode)
 			(local-set-key (kbd "C-c C-f") 'blacken-buffer))
-	(add-hook 'python-mode-hook 'python-mode-hooks))
+	(add-hook 'python-mode-hook 'python-mode-hooks)))
 
 (provide '66-python-mode)
 ;;; 66-python-mode.el ends here

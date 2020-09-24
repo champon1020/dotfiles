@@ -24,9 +24,8 @@
 (show-paren-mode t)
 
 ;; indent
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
-(setq tab-width 2)
 
 (provide '10-style)
 ;;; 10-style.el ends here
