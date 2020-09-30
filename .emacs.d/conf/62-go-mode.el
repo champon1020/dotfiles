@@ -10,8 +10,8 @@
 	(defun go-mode-hooks ()
 		"Hooks for go mode"
     (setq indent-tabs-mode nil)
-		(setq tab-width 4)
-		(setq standard-indent 4)
+    (setq tab-width 4)
+    (setq standard-indent 4)
 		(setq gofmt-command "goimports")
 		(define-key go-mode-map (kbd "M-.") 'godef-jump)
     (define-key go-mode-map (kbd "C-c d") 'godoc)
