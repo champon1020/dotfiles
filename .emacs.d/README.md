@@ -1,11 +1,17 @@
-# Emacs Setting Files
+# Emacs Settings
 
-## Packages
+## Help
 
-#### Theme
+### Keybind
+- Delete previous indentation: M-\
+- Move to next indentation: M-i
+
+## Package
+
+### Theme
 - ample-zen
 
-#### Utility
+### Utility
 - auto-complete
 - multi-term
 - undotree
@@ -15,7 +21,7 @@
 - flycheck
 - dired-quick-sort
 
-#### Mode
+### Mode
 - elisp-mode
 - web-mode
 - go-mode
@@ -26,6 +32,7 @@
 - typescript-mode
 - python-mode
   - python-black
+  - py-isort
 - markdown-mode
   - markdown-preview-mode
 - yaml-mode
