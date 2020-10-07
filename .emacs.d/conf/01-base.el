@@ -29,5 +29,43 @@
 
 (package-initialize)
 
+(defun require-package (package &optional min-version no-refresh)
+  "Install given PACKAGE, optionally requiring MIN-VERSION.
+If NO-REFRESH is non-nil, the available package lists will not be
+re-downloaded in order to locate PACKAGE."
+  (if (package-installed-p package min-version) t
+    (if (or (assoc package package-archive-contents) no-refresh)
+        (if (boundp 'package-selected-packages)
+            (package-install package nil)
+          (package-install package))
+      (progn
+        (package-refresh-contents)
+        (require-package package min-version t)))))
+
+(require-package 'ample-zen-theme)
+
+(require-package 'auto-complete)
+(require-package 'multi-term)
+(require-package 'undo-tree)
+(require-package 'undohist)
+(require-package 'wgrep)
+(require-package 'flycheck)
+(require-package 'dired-quick-sort)
+
+(require-package 'web-mode)
+(require-package 'go-mode)
+(require-package 'go-eldoc)
+(require-package 'go-autocomplete)
+(require-package 'cc-mode)
+(require-package 'asm-mode)
+(require-package 'typescript-mode)
+(require-package 'python-mode)
+(require-package 'python-black)
+(require-package 'py-isort)
+(require-package 'markdown-mode)
+(require-package 'markdown-preview-mode)
+(require-package 'yaml-mode)
+(require-package 'dockerfile-mode)
+
 (provide '01-base)
 ;;; 01-base.el ends here

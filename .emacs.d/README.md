@@ -9,12 +9,12 @@
 ## Package
 
 ### Theme
-- ample-zen
+- ample-zen-theme
 
 ### Utility
 - auto-complete
 - multi-term
-- undotree
+- undo-tree
 - undohist
 - elscreen
 - wgrep
@@ -22,7 +22,7 @@
 - dired-quick-sort
 
 ### Mode
-- elisp-mode
+- elisp-mode (default installed)
 - web-mode
 - go-mode
   - go-eldoc
