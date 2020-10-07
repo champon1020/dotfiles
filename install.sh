@@ -66,3 +66,10 @@ for path in ${DOTCONFIGS[@]}; do
   ln -s $path $TARGET
   echo "link '$path' to '$TARGET'"
 done
+
+
+# Emacs settings.
+if [ ! -e ".emacs.d/public_repos" ]; then
+  mkdir ".emacs.d/public_repos"
+  echo "create directory .emacs.d/public_repos"
+fi
