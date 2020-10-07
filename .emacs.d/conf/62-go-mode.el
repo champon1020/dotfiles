@@ -9,20 +9,27 @@
 	(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 	(defun go-mode-hooks ()
 		"Hooks for go mode"
-		(setq tab-width 4)
-		(setq c-basic-offset 4)
+    (setq indent-tabs-mode nil)
+    (setq tab-width 4)
+    (setq standard-indent 4)
 		(setq gofmt-command "goimports")
-		(add-hook 'before-save-hook 'gofmt-before-save)
-		(local-set-key (kbd "M-.") 'godef-jump)
-		(local-set-key (kbd "C-c C-a") 'go-import-add))
-	(add-hook 'go-mode-hook 'go-mode-hooks)
-	(when (require 'go-eldoc nil t)
-		(add-hook 'go-mode-hook 'go-eldoc-setup)))
+		(define-key go-mode-map (kbd "M-.") 'godef-jump)
+    (define-key go-mode-map (kbd "C-c d") 'godoc)
+    (add-hook 'before-save-hook 'gofmt-before-save))
+  (add-hook 'go-mode-hook 'go-mode-hooks))
 
 ;; go-eldoc
+(when (require 'go-eldoc nil t)
+  (add-hook 'go-mode-hook 'go-eldoc-setup))
+
+;; go-autocomplete
 (when (require 'go-autocomplete nil t)
-	(custom-set-variables
-	 '(ac-go-expand-arguments-into-snippets nil)))
+  (defun go-autocomplete-hooks ()
+    (ac-config-default)
+    (custom-set-variables
+     '(ac-go-expand-arguments-into-snippets nil)))
+  (add-hook 'go-mode-hook 'go-autocomplete-hooks))
+
 
 (provide '62-go-mode)
 ;;; 62-go-mode.el ends here

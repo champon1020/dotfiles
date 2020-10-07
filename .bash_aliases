@@ -12,6 +12,7 @@ alias yarns='sudo yarn start'
 alias swg-gen='sh /opt/swagger-codegen/exec.sh'
 alias opn-gen='sh /opt/openapi-generator/exec.sh'
 alias emacs="emacs -nw"
+alias activate="source ~/.pyenv/versions/miniconda3-4.7.12/bin/activate"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

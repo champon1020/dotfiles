@@ -29,21 +29,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/home/champon1020/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#   eval "$__conda_setup"
-#else
-#     if [ -f "/home/champon1020/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/champon1020/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/champon1020/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
 if typeset -A &>/dev/null; then
   #can use
   typeset -A _paths
@@ -61,4 +46,9 @@ else
   typeset _p=$(awk 'BEGIN{RS=":";ORS=":"} !x[$0]++' <<<"${PATH}:")
   PATH=${_p%:*:}
   unset -v _p
+fi
+
+# init pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi

@@ -5,3 +5,4 @@
 .emacs.d/backups
 .emacs.d/auto-save-list
 .emacs.d/**/.markdown-preview.html
+.emacs.d/eshell
