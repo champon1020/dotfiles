@@ -8,3 +8,4 @@ cd /path/to/dotfiles
 
 bash install.sh
 ```
+

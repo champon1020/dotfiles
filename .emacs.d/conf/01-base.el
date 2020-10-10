@@ -45,7 +45,6 @@ re-downloaded in order to locate PACKAGE."
 (require-package 'ample-zen-theme)
 
 (require-package 'auto-complete)
-(require-package 'multi-term)
 (require-package 'undo-tree)
 (require-package 'undohist)
 (require-package 'wgrep)

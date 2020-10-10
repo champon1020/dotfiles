@@ -11,6 +11,7 @@ IGNORE_FILES[3]=$CUR/.gitignore
 IGNORE_FILES[4]=$CUR/.config
 # IGNORE_FILES=($CUR/. $CUR/.. $CUR/.git $CUR/.gitignore $CUR/.config)
 
+# Install basic dotfiles
 echo "HOME DOTFILES"
 for path in ${FILES[@]}; do
   # If path is included in IGNORE_FILES, ignore the process.
@@ -42,6 +43,7 @@ for path in ${FILES[@]}; do
 done
 
 
+# Install .config
 echo "UNDER DOTCONFIG"
 DOTCONFIGS=$CUR/.config/*
 for path in ${DOTCONFIGS[@]}; do

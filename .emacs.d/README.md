@@ -37,3 +37,17 @@
   - markdown-preview-mode
 - yaml-mode
 - dockerfile-mode
+
+## Requirements
+
+### Python
+- pylintrc
+- flake8
+- isort
+- black
+
+### MacOS
+
+```
+brew install coreutils
+```

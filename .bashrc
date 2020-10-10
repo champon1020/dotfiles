@@ -4,22 +4,24 @@
 
 # If not running interactively, don't do anything
 case $- in
-    *i*) ;;
-      *) return;;
+  *i*) ;;
+  *) return;;
 esac
 
 # load dotfiles for bash
-BASH_DOTFILES=(.bash_aliases .bash_exports .bash_styles)
+BASH_DOTFILES=(.aliases .exports .styles .bash_styles)
 for file in ${BASH_DOTFILES[@]}; do
-		if [ -f $HOME/${file} ]; then
-				. $HOME/${file}
-		fi
+	if [ -f $HOME/${file} ]; then
+		. $HOME/${file}
+	else
+    echo "$HOME/$file is not exist"
+  fi
 done
 
 # history
 HISTCONTROL=ignoreboth
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=10000
 shopt -s histappend
 
 # check the window size after each command and, if necessary,

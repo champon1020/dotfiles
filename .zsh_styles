@@ -1,0 +1,3 @@
+# prompt
+autoload -Uz colors && colors
+PROMPT='%F{blue}%m@%n%F{magenta}%*%F{cyan}%~%F{yellow}$%f '

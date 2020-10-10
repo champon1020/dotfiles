@@ -9,7 +9,7 @@
 (define-key global-map (kbd "C-c /") 'comment-region)
 
 (when (require 'multi-term nil t)
-	(define-key global-map (kbd "C-t") 'multi-term))
+	(define-key global-map (kbd "C-t") 'eshell))
 
 (when (require 'markdown-preview-mode nil t)
 	(define-key global-map (kbd "C-c C-m p") 'markdown-preview-mode)
