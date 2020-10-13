@@ -9,11 +9,11 @@ case $- in
 esac
 
 # load dotfiles for bash
-BASH_DOTFILES=(.aliases .exports .styles .bash_styles)
+BASH_DOTFILES=(.common_aliases .common_exports .common_styles .bash_styles)
 for file in ${BASH_DOTFILES[@]}; do
-	if [ -f $HOME/${file} ]; then
-		. $HOME/${file}
-	else
+  if [ -f $HOME/${file} ]; then
+    . $HOME/${file}
+  else
     echo "$HOME/$file is not exist"
   fi
 done

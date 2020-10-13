@@ -1,10 +1,10 @@
 # load dotfiles
 # load dotfiles for bash
-ZSH_DOTFILES=(.aliases .exports .styles .zsh_styles)
+ZSH_DOTFILES=(.common_aliases .common_exports .common_styles .zsh_styles)
 for file in ${ZSH_DOTFILES[@]}; do
-	if [ -f $HOME/${file} ]; then
-		. $HOME/${file}
-	else
+  if [ -f $HOME/${file} ]; then
+    . $HOME/${file}
+  else
     echo "$HOME/$file is not exist"
   fi
 done
