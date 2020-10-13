@@ -6,12 +6,12 @@
 ;;; Code:
 ;; web-mode
 (when (require 'web-mode nil t)
-	(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-	(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
-	(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
-	(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
-	(add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
-	(defun web-mode-hooks ()
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+  (defun web-mode-hooks ()
 		"Hooks for web mode."
 		(setq web-mode-markup-indent-offset 2)
 		(setq web-mode-code-indent-offset 2)

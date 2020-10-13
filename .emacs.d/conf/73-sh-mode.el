@@ -5,7 +5,7 @@
 
 ;;; Code:
 (defun sh-mode-hooks ()
-	"Hooks for sh mode."
+  "Hooks for sh mode."
   (setq sh-basic-offset 2)
   (setq sh-indentation 2))
 
