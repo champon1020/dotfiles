@@ -13,7 +13,6 @@
 
 ### Utility
 - auto-complete
-- multi-term
 - undo-tree
 - undohist
 - elscreen
@@ -24,12 +23,14 @@
 ### Mode
 - elisp-mode (default installed)
 - web-mode
+  - prettier
 - go-mode
   - go-eldoc
   - go-autocomplete
 - cc-mode
 - asm-mode
 - typescript-mode
+  - prettier
 - python-mode
   - python-black
   - py-isort

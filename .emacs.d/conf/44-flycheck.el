@@ -7,6 +7,10 @@
 ;;; Code:
 ;; setup grammer error package
 (when (require 'flycheck nil t)
+  (setq-default flycheck-disabled-checkers
+                (append flycheck-disabled-checkers
+                        '(jabascript-jslint json-jsonlist)))
+  (flycheck-add-mode 'javascript-eslint 'web-mode)
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (provide '44-flycheck)

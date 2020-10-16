@@ -66,6 +66,7 @@ re-downloaded in order to locate PACKAGE."
 (require-package 'yaml-mode)
 (require-package 'dockerfile-mode)
 (require-package 'json-mode)
+(require-package 'prettier)
 
 (provide '01-base)
 ;;; 01-base.el ends here

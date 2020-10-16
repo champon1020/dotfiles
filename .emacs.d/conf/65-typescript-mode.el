@@ -11,6 +11,7 @@
   (defun ts-mode-hooks ()
     (setq tab-width 2)
     (setq-default typescript-indent-level 2))
+  (add-hook 'typescript-mode-hook 'prettier-mode)
   (add-hook 'typescript-mode-hook 'ts-mode-hooks))
 
 (provide '65-typescript-mode)
