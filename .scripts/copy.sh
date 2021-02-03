@@ -8,7 +8,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   cat $1 | xsel --clipboard --input
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  pgfile < $1
+  pbcopy < $1
 fi
 
 echo "copied $1 to clipboard"
