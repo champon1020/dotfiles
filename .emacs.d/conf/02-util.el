@@ -21,6 +21,9 @@
   (setq ac-use-menu-map t)
   (setq ac-ignore-case nil))
 
+;; Display row number.
+(global-linum-mode t)
+
 ;; hide startup page
 (setq inhibit-startup-screen t)
 

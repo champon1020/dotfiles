@@ -23,11 +23,11 @@
  'package-archives
  '("marmalade" . "https://marmalade-repo.org/packages/"))
 
+(package-initialize)
+
 ;; set meta key to 'Command' on Mac
 (when (eq system-type 'darwin)
   (setq ns-command-modifier (quote meta)))
-
-(package-initialize)
 
 (defun require-package (package &optional min-version no-refresh)
   "Install given PACKAGE, optionally requiring MIN-VERSION.
@@ -61,6 +61,7 @@ re-downloaded in order to locate PACKAGE."
 (require-package 'python-mode)
 (require-package 'python-black)
 (require-package 'py-isort)
+(require-package 'rust-mode)
 (require-package 'markdown-mode)
 (require-package 'markdown-preview-mode)
 (require-package 'yaml-mode)
