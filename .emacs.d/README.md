@@ -47,6 +47,10 @@
 - isort
 - black
 
+# Go
+- github.com/nsf/gocode
+- golang.org/x/tools/cmd/goimports
+
 ### MacOS
 
 ```
