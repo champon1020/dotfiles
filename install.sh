@@ -32,7 +32,7 @@ for path in ${FILES[@]}; do
 					echo "create directory '$BACKUPDIR'"
 				fi
 				mv $TARGET $BACKUPDIR/
-				echo "backup '$TARGET' to '$BACKUPDIR/'" 
+				echo "backup '$TARGET' to '$BACKUPDIR/'"
 			fi
 		fi
 
@@ -49,7 +49,7 @@ DOTCONFIGS=$CUR/.config/*
 for path in ${DOTCONFIGS[@]}; do
   # Target path.
   TARGET=$HOME/.config/$(basename $path)
-  
+
   if [ -e $TARGET ]; then
     if [ -L $TARGET ]; then
       unlink $TARGET
@@ -68,10 +68,3 @@ for path in ${DOTCONFIGS[@]}; do
   ln -s $path $TARGET
   echo "link '$path' to '$TARGET'"
 done
-
-
-# Emacs settings.
-if [ ! -e ".emacs.d/public_repos" ]; then
-  mkdir ".emacs.d/public_repos"
-  echo "create directory .emacs.d/public_repos"
-fi
