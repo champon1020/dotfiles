@@ -1,10 +1,9 @@
-;;; 60-elisp-mode.el --- elisp mode
+;;; init-elisp.el --- ELISP MODE
 
 ;;; Commentary:
-;; This file provides elisp mode settings.
+;; elisp mode setting.
 
 ;;; Code:
-;; emacs lisp mode hooks
 (defun elisp-mode-hooks ()
   "Hooks for elisp mode."
   (when (require 'eldoc nil t)
@@ -13,5 +12,6 @@
     (turn-on-eldoc-mode)))
 (add-hook 'emacs-lisp-mode-hook 'elisp-mode-hooks)
 
-(provide '60-elisp-mode)
-;;; 60-elisp-mode.el ends here
+
+(provide 'init-elisp)
+;;; init-elisp.el ends here

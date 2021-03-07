@@ -12,21 +12,19 @@
 - ample-zen-theme
 
 ### Utility
-- auto-complete
-- undo-tree
-- undohist
-- elscreen
-- wgrep
-- flycheck
-- dired-quick-sort
+- [auto-complete](https://github.com/auto-complete/auto-complete)
+- [undo-tree](https://github.com/apchamberlain/undo-tree.el)
+- [undohist](https://github.com/emacsorphanage/undohist)
+- [elscreen](https://github.com/knu/elscreen)
+- [flycheck](https://github.com/flycheck/flycheck)
+- [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort)
 
 ### Mode
 - elisp-mode (default installed)
-- web-mode
-  - prettier
-- go-mode
-  - go-eldoc
-  - go-autocomplete
+- [web-mode](https://web-mode.org/)
+  - prettier (npm package)
+- [go-mode](https://github.com/dominikh/go-mode.el)
+  - [go-eldoc](https://github.com/emacsorphanage/go-eldoc)
 - cc-mode
 - asm-mode
 - typescript-mode
