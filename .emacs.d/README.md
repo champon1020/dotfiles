@@ -21,23 +21,26 @@
 
 ### Mode
 - elisp-mode (default installed)
-- [web-mode](https://web-mode.org/)
-  - prettier (npm package)
 - [go-mode](https://github.com/dominikh/go-mode.el)
   - [go-eldoc](https://github.com/emacsorphanage/go-eldoc)
+- [python-mode](https://github.com/python-mode/python-mode)
+  - [python-black](https://github.com/wbolster/emacs-python-black)
+  - [py-isort](https://github.com/paetzke/py-isort.el)
+- [web-mode](https://web-mode.org/)
+- [typescript-mode](https://github.com/emacs-typescript/typescript.el)
+- [vue-mode](https://github.com/AdamNiederer/vue-mode)
+- [prettier](https://github.com/jscheid/prettier.el)
+- [markdown-mode](https://jblevins.org/projects/markdown-mode/)
+  - [markdown-preview-mode](https://github.com/ancane/markdown-preview-mode)
+- [yaml-mode](https://github.com/yoshiki/yaml-mode)
+  - [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
 - cc-mode
 - asm-mode
-- typescript-mode
-  - prettier
-- python-mode
-  - python-black
-  - py-isort
-- markdown-mode
-  - markdown-preview-mode
-- yaml-mode
-- dockerfile-mode
 
-## Requirements
+## Other Packages
+
+### apt / brew
+- markdown
 
 ### Python
 - pylintrc
@@ -45,11 +48,12 @@
 - isort
 - black
 
-# Go
+### Go
 - github.com/nsf/gocode
 - golang.org/x/tools/cmd/goimports
 
-### MacOS
+### npm
+- prettier
 
 ```
 brew install coreutils

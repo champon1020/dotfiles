@@ -5,6 +5,7 @@
 
 ;;; Code:
 (require-package 'typescript-mode)
+(require-package 'prettier)
 
 (add-to-list 'auto-mode-alist '("\\.ts[x]?$" . typescript-mode))
 

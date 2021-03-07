@@ -58,5 +58,9 @@
 (setq truncate-lines t)
 
 
+;; Trail whitespace at end of line with saving.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+
 (provide 'init-global)
 ;;; init-global.el ends here

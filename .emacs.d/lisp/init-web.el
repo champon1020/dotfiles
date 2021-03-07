@@ -5,6 +5,7 @@
 
 ;;; Code:
 (require-package 'web-mode)
+(require-package 'prettier)
 
 (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css$" . web-mode))

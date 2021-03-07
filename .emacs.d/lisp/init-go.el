@@ -5,6 +5,7 @@
 
 ;;; Code:
 (require-package 'go-mode)
+(require-package 'go-eldoc)
 
 (defun go-mode-hooks ()
   "Hooks for go mode"
@@ -16,12 +17,8 @@
   (add-hook 'before-save-hook 'gofmt-before-save))
 
 (add-hook 'go-mode-hook 'go-mode-hooks)
-(add-hook 'go-mode-hook #'flycheck-mode)
-
-
-;; go-eldoc setting.
-(require-package 'go-eldoc)
 (add-hook 'go-mode-hook 'go-eldoc-setup)
+(add-hook 'go-mode-hook #'flycheck-mode)
 
 
 (provide 'init-go)

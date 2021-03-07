@@ -58,8 +58,16 @@ re-downloaded in order to locate PACKAGE."
 
 (require 'init-elisp)
 (require 'init-go)
+(require 'init-python)
 (require 'init-web)
 (require 'init-vue)
+(require 'init-typescript)
+(require 'init-rust)
+(require 'init-markdown)
+(require 'init-yaml)
+(require 'init-json)
+(require 'init-sh)
+(require 'init-asm)
 
 
 (provide 'init)
