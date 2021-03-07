@@ -14,9 +14,9 @@
 (require 'package)
 
 (add-to-list 'package-archives
-             '(("melpa" . "https://melpa.org/packages/")
-               ("org" . "https://orgmode.org/elpa/")
-               ("gnu" . "https://elpa.gnu.org/packages/")))
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
 (package-initialize)
 
@@ -68,6 +68,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-json)
 (require 'init-sh)
 (require 'init-asm)
+(require 'init-sql)
 
 
 (provide 'init)

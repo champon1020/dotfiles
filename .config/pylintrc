@@ -1,4 +1,0 @@
-[OPTIONS]
-generated-members=torch.*
-
-extension-pkg-whitelist=cv2

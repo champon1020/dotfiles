@@ -20,7 +20,9 @@
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort)
 
 ### Mode
-- elisp-mode (default installed)
+- elisp-mode (default)
+- asm-mode (default)
+- sh-mode (default)
 - [go-mode](https://github.com/dominikh/go-mode.el)
   - [go-eldoc](https://github.com/emacsorphanage/go-eldoc)
 - [python-mode](https://github.com/python-mode/python-mode)
@@ -34,27 +36,21 @@
   - [markdown-preview-mode](https://github.com/ancane/markdown-preview-mode)
 - [yaml-mode](https://github.com/yoshiki/yaml-mode)
   - [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
-- cc-mode
-- asm-mode
 
 ## Other Packages
 
-### apt / brew
+### os (apt / brew)
 - markdown
+- coreutils (MacOS)
 
-### Python
-- pylintrc
+### pip
 - flake8
 - isort
 - black
 
-### Go
+### go
 - github.com/nsf/gocode
 - golang.org/x/tools/cmd/goimports
 
 ### npm
 - prettier
-
-```
-brew install coreutils
-```

@@ -16,6 +16,7 @@
 
 (add-hook 'python-mode-hook 'python-mode-hooks)
 (add-hook 'python-mode-hook 'python-black-on-save-mode)
+(add-hook 'python-mode-hook #'flycheck-mode)
 
 
 (provide 'init-python)
