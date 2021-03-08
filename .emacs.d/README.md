@@ -33,7 +33,6 @@
 - [vue-mode](https://github.com/AdamNiederer/vue-mode)
 - [prettier](https://github.com/jscheid/prettier.el)
 - [markdown-mode](https://jblevins.org/projects/markdown-mode/)
-  - [markdown-preview-mode](https://github.com/ancane/markdown-preview-mode)
 - [yaml-mode](https://github.com/yoshiki/yaml-mode)
   - [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
 
