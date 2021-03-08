@@ -14,7 +14,8 @@
   (setq tab-width 4)
   (define-key markdown-mode-map (kbd "C-c p") 'markdown-preview-mode))
 
-(setq markdown-preview-stylesheets (list "github.css"))
+;; (setq markdown-preview-stylesheets (list "github.css"))
+(setq markdown-preview-stylesheets (list "http://thomasf.github.io/solarized-css/solarized-light.min.css"))
 
 (add-hook 'markdown-mode-hook 'markdown-mode-hooks)
 

@@ -19,6 +19,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
   source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242,bg=cyan"
 
 # color for auto completion list
 zstyle ':completion:*' list-colors ''
