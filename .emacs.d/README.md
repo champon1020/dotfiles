@@ -32,7 +32,7 @@
 - [typescript-mode](https://github.com/emacs-typescript/typescript.el)
 - [vue-mode](https://github.com/AdamNiederer/vue-mode)
 - [prettier](https://github.com/jscheid/prettier.el)
-- [markdown-mode](https://jblevins.org/projects/markdown-mode/)
+- [polymode](https://polymode.github.io/)
 - [yaml-mode](https://github.com/yoshiki/yaml-mode)
   - [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
 
