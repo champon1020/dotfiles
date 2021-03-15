@@ -53,5 +53,6 @@ alias pb='bash ~/.scripts/copy.sh'
 alias swggen='sh /opt/swagger-codegen/exec.sh'
 alias opngen='sh /opt/openapi-generator/exec.sh'
 alias emacs="emacs -nw"
+alias texc="bash ~/.scripts/tex-compile.sh"
 
 neofetch

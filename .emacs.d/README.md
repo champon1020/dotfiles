@@ -18,6 +18,7 @@
 - [elscreen](https://github.com/knu/elscreen)
 - [flycheck](https://github.com/flycheck/flycheck)
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort)
+- [pdf-tools](https://github.com/politza/pdf-tools)
 
 ### Mode
 - elisp-mode (default)

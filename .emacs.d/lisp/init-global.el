@@ -55,7 +55,6 @@
 
 ;; Don't wrap the text as overflowing.
 ;; Toggle this with "C-c l".
-;;(setq truncate-lines t)
 (toggle-truncate-lines)
 
 

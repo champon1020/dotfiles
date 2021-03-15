@@ -55,6 +55,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-undohist)
 (require 'init-undo-tree)
 (require 'init-auto-complete)
+(require 'init-pdf)
 
 (require 'init-elisp)
 (require 'init-go)
