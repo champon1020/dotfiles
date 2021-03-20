@@ -4,6 +4,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # go
 export GOPATH="$HOME/repos/go"
 export GOROOT="/usr/local/go"
+export GOPRIVATE="github.com/champon1020"
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # pyenv
