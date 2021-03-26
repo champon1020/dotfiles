@@ -4,8 +4,11 @@
 ;; Go mode setting.
 
 ;;; Code:
+(require-package 'flycheck)
 (require-package 'go-mode)
 (require-package 'go-eldoc)
+
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
 (defun go-mode-hooks ()
   "Hooks for go mode"

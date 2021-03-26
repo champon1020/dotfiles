@@ -51,6 +51,7 @@
 ### go
 - github.com/nsf/gocode
 - golang.org/x/tools/cmd/goimports
+- github.com/rogpeppe/godef
 
 ### npm
 - prettier
