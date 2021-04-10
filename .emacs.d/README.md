@@ -35,7 +35,8 @@
 - [prettier](https://github.com/jscheid/prettier.el)
 - [polymode](https://polymode.github.io/)
 - [yaml-mode](https://github.com/yoshiki/yaml-mode)
-  - [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
+- [dockerfile-mode](https://github.com/spotify/dockerfile-mode)
+- [terraform-mode](https://github.com/emacsorphanage/terraform-mode)
 
 ## Other Packages
 
