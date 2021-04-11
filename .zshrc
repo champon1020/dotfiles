@@ -40,8 +40,8 @@ fi
 
 # command aliases
 alias ..='cd ../'
-alias ls='ls --color=auto'
-alias ll='ls -alF'
+alias ls='ls'
+alias ll='ls -aG'
 alias grep='grep --color=auto'
 alias less='less'
 alias cat='cat'
