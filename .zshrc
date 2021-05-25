@@ -21,12 +21,30 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242,bg=cyan"
 
+# git-prompt
+source ~/.zsh/git-prompt.sh
+
+# git-completion
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+autoload -Uz compinit && compinit
+
+# prompt option
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
+# prompt
+setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{read}$(__git_ps1 "(%s)")$f\$ '
+
 # color for auto completion list
 zstyle ':completion:*' list-colors ''
 
-# shell style
+# prompt style
 autoload -Uz colors && colors
-PROMPT='%F{blue}%m@%n%F{magenta}%*%F{cyan}%~%F{yellow}$%f '
+PROMPT='%F{magenta}[%*] %F{blue}%n@%m:%F{cyan}%~ %F{red}$(__git_ps1 "(%s)")
+%F{yellow}$%f '
 
 # init pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
