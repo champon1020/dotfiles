@@ -5,6 +5,7 @@ auto-save-list/
 ac-comphist.dat
 network-security.data
 .markdown-preview.html
+**/*.elc
 
 !elpa/.gitkeep
 !backups/.gitkeep
