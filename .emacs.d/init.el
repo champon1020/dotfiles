@@ -51,14 +51,15 @@
 (leaf elscreen
       :doc "Multi screen"
       :ensure t
-      :bind ((elscreen-map
-              ("C-z" . iconify-or-deiconify-frame)
-              ("C-<tab>" . elscreen-next)
-              ("C-S-<tab>" . elscreen-previous)))
+      :preface
+      (global-unset-key (kbd "C-z"))
 
-      :custom ((elscreen-tab-display-kill-screen . nil))
-      :after (elscreen-start))
+      :custom ((elscreen-tab-display-kill-screen . nil)
+               (elscreen-tab-display-control . nil)
+               (elscreen-display-screen-number . nil)
+               (elscreen-prefix-key . "\C-z"))
 
+      :hook (after-init-hook . elscreen-start))
 
 
 (leaf cus-edit
@@ -288,7 +289,7 @@
       (add-to-list 'auto-mode-alist '("\\.sql$" . sql-mode)))
 
 
-(leaf markdown-mode
+(leaf poly-markdown
       :doc "Markdown mode"
       :ensure t
       :config

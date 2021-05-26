@@ -1,6 +1,7 @@
 elpa/**
 backups/**
 undohist/
+auto-save-list/
 ac-comphist.dat
 network-security.data
 .markdown-preview.html
