@@ -12,7 +12,7 @@
   (setq sh-basic-offset 2)
   (setq sh-indentation 2))
 
-(add-hook 'sh-mode-hook  'sh-mode-hooks)
+(add-hook 'sh-mode-hook 'sh-mode-hooks)
 
 (provide 'init-sh)
 ;;; init-sh.el ends here

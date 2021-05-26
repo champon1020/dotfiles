@@ -14,7 +14,7 @@
 (defun web-mode-hooks ()
   "Hooks for web mode."
   (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-css-indent-offset 2)  
+  (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 2)
   (setq web-mode-block-padding 2)
   (setq web-mode-style-padding 0)

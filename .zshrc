@@ -36,7 +36,7 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
 # prompt
-setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{read}$(__git_ps1 "(%s)")$f\$ '
+# setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{read}$(__git_ps1 "(%s)")$f\$ '
 
 # color for auto completion list
 zstyle ':completion:*' list-colors ''
@@ -71,6 +71,7 @@ alias pb='bash ~/.scripts/copy.sh'
 alias swggen='sh /opt/swagger-codegen/exec.sh'
 alias opngen='sh /opt/openapi-generator/exec.sh'
 alias emacs="emacs -nw"
-alias texc="bash ~/.scripts/tex-compile.sh"
+alias texc="sh ~/.scripts/tex-compile.sh"
+alias emacsc="sh ~/.scripts/emacs-byte-compile.sh "
 
 neofetch
