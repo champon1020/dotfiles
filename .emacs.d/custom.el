@@ -6,6 +6,10 @@
  '(column-number-mode t)
  '(custom-file "~/.emacs.d/custom.el")
  '(debug-on-error t)
+ '(elscreen-display-screen-number nil t)
+ '(elscreen-prefix-key "" t)
+ '(elscreen-tab-display-control nil t)
+ '(elscreen-tab-display-kill-screen nil t)
  '(global-linum-mode t)
  '(history-delete-duplicates t)
  '(history-length 1000)
@@ -20,7 +24,7 @@
      ("gnu" . "https://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (poly-markdown yaml-mode web-mode vue-mode undohist undo-tree typescript-mode terraform-mode rust-mode python-mode python-black py-isort prettier openwith markdown-mode macrostep leaf-tree leaf-convert json-mode go-eldoc flycheck elscreen el-get dockerfile-mode dired-quick-sort company blackout ample-zen-theme)))
+    (oj yaml-mode web-mode vue-mode undohist undo-tree typescript-mode terraform-mode rust-mode python-mode python-black py-isort prettier poly-markdown openwith macrostep leaf-tree leaf-convert json-mode go-eldoc flycheck elscreen el-get dockerfile-mode dired-quick-sort company blackout ample-zen-theme)))
  '(ring-bell-function (quote ignore))
  '(show-paren-delay 0.1)
  '(show-paren-style (quote parenthesis))
