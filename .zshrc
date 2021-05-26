@@ -35,15 +35,13 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
 
-# prompt
-# setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{read}$(__git_ps1 "(%s)")$f\$ '
-
 # color for auto completion list
 zstyle ':completion:*' list-colors ''
 
 # prompt style
 autoload -Uz colors && colors
-PROMPT='%F{magenta}[%*] %F{blue}%n@%m:%F{cyan}%~ %F{red}$(__git_ps1 "(%s)")
+#setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")$f\$ '
+setopt PROMPT_SUBST ; PS1='%F{magenta}[%*] %F{blue}%n@%m:%F{cyan}%~ %F{red}$(__git_ps1 "(%s)")
 %F{yellow}$%f '
 
 # init pyenv
