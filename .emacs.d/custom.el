@@ -10,13 +10,14 @@
  '(elscreen-prefix-key "" t)
  '(elscreen-tab-display-control nil t)
  '(elscreen-tab-display-kill-screen nil t)
- '(global-linum-mode t)
+ '(global-nlinum-mode t)
  '(history-delete-duplicates t)
  '(history-length 1000)
  '(imenu-list-position (quote left) t)
  '(imenu-list-size 30 t)
  '(indent-tabs-mode nil)
  '(init-file-debug t t)
+ '(nlinum-format "%3d ")
  '(package-archives
    (quote
     (("org" . "https://orgmode.org/elpa/")
@@ -24,8 +25,9 @@
      ("gnu" . "https://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (oj yaml-mode web-mode vue-mode undohist undo-tree typescript-mode terraform-mode rust-mode python-mode python-black py-isort prettier poly-markdown openwith macrostep leaf-tree leaf-convert json-mode go-eldoc flycheck elscreen el-get dockerfile-mode dired-quick-sort company blackout ample-zen-theme)))
+    (nlinum yaml-mode web-mode vue-mode undohist undo-tree typescript-mode terraform-mode rust-mode python-mode python-black py-isort prettier poly-markdown openwith oj macrostep leaf-tree leaf-convert json-mode go-eldoc flycheck elscreen el-get dockerfile-mode dired-quick-sort company blackout ample-zen-theme)))
  '(ring-bell-function (quote ignore))
+ '(scroll-bar-mode -1)
  '(show-paren-delay 0.1)
  '(show-paren-style (quote parenthesis))
  '(tab-width 2)

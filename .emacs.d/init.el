@@ -85,7 +85,7 @@
            (history-length . 1000)
            (history-delete-duplicates . t)
            (ring-bell-function . 'ignore)
-           (global-linum-mode . t)
+           (scroll-bar-mode . -1)
            (column-number-mode . t)
            (indent-tabs-mode . nil)
            (tab-width . 2))
@@ -95,6 +95,13 @@
 
   :mode-hook
   (before-save-hook . ((delete-trailing-whitespace))))
+
+
+(leaf nlinum
+  :doc "light weight linum mode"
+  :ensure t
+  :custom ((global-nlinum-mode . t)
+           (nlinum-format . "%3d ")))
 
 
 (leaf paren
