@@ -86,6 +86,7 @@
            (history-delete-duplicates . t)
            (ring-bell-function . 'ignore)
            (scroll-bar-mode . -1)
+           (linum-mode . nil)
            (column-number-mode . t)
            (indent-tabs-mode . nil)
            (tab-width . 2))
