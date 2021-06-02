@@ -86,23 +86,23 @@
            (history-delete-duplicates . t)
            (ring-bell-function . 'ignore)
            (scroll-bar-mode . -1)
-           (linum-mode . nil)
            (column-number-mode . t)
            (indent-tabs-mode . nil)
            (tab-width . 2))
 
   :config
   (add-to-list 'backup-directory-alist (cons "." "~/.emacs.new/backups/"))
+  ;;(global-display-line-numbers-mode)
 
   :mode-hook
   (before-save-hook . ((delete-trailing-whitespace))))
 
 
-(leaf nlinum
-  :doc "light weight linum mode"
-  :ensure t
-  :custom ((global-nlinum-mode . t)
-           (nlinum-format . "%3d ")))
+;;(leaf nlinum
+;;  :doc "light weight linum mode"
+;;  :ensure t
+;;  :custom ((global-nlinum-mode . t)
+;;           (nlinum-format . "%3d ")))
 
 
 (leaf paren
@@ -218,8 +218,7 @@
 (leaf rust-mode
   :doc "Rust mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+  :mode "\\.rs\\'"
 
   :mode-hook
   (rust-mode-hook . ((defvar rust-format-on-save t))))
@@ -240,11 +239,9 @@
 (leaf web-mode
   :doc "Web mode"
   :ensure t
+  :mode ("\\.html\\'" "\\.css\\'" "\\.js[x]?\\'")
   :config
   (leaf prettier :ensure t)
-  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.js[x]?\\'" . web-mode))
 
   :mode-hook
   (web-mode-hook . ((defvar web-mode-markup-indent-offset 2)
@@ -259,9 +256,9 @@
 (leaf typescript-mode
   :doc "Typescript mode"
   :ensure t
+  :mode "\\.ts[x]?\\'"
   :config
   (leaf prettier :ensure t)
-  (add-to-list 'auto-mode-alist '("\\.ts[x]?\\'" . typescript-mode))
 
   :mode-hook
   (typescript-mode-hook . ((defvar typescript-indent-level 2)
@@ -271,9 +268,9 @@
 (leaf vue-mode
   :doc "Vue mode"
   :ensure t
+  :mode "\\.vue\\'"
   :config
   (leaf prettier :ensure t)
-  (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 
   :mode-hook
   (mmm-mode-hook . ((set-face-background 'mmm-default-submode-face nil)
@@ -282,9 +279,7 @@
 
 (leaf sh-mode
   :doc "Shell mode"
-  :config
-  (add-to-list 'auto-mode-alist '("\\.sh\\'" . sh-mode))
-  (add-to-list 'auto-mode-alist '("\\.bash\\'" . sh-mode))
+  :mode ("\\.sh\\'" "\\.bash\\'")
 
   :mode-hook
   (sh-mode-hook . ((defvar sh-basic-offset 2)
@@ -294,14 +289,13 @@
 (leaf sql-mode
   :doc "SQL mode"
   :config
-  (add-to-list 'auto-mode-alist '("\\.sql$" . sql-mode)))
+  :mode "\\.sql\\'")
 
 
-(leaf poly-markdown
+(leaf markdown-mode
   :doc "Markdown mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.md\\'" . poly-markdown-mode)))
+  :mode "\\.md\\'")
 
 
 (leaf openwith
@@ -314,8 +308,7 @@
 (leaf json-mode
   :doc "Json mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.json\\'" . json-mode))
+  :mode "\\.json\\'"
 
   :mode-hook
   (json-mode-hook . ((defvar js-indent-level 2))))
@@ -324,24 +317,19 @@
 (leaf yaml-mode
   :doc "Yaml mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-  (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode)))
+  :mode ("\\.yml\\'" "\\.yaml\\'"))
 
 
 (leaf dockerfile-mode
   :doc "Dockerfile mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("Dockerfile*\\'" . dockerfile-mode)))
+  :mode "Dockerfile*\\'")
 
 
 (leaf terraform-mode
   :doc "Terraform mode"
   :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.tf\\'" . terraform-mode))
-  (add-to-list 'auto-mode-alist '("\\.tf.json\\'" . terraform-mode)))
+  :mode ("\\.tf\\'" "\\.tf.json\\'"))
 
 
 (leaf oj
