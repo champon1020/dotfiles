@@ -23,3 +23,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
 # coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# use zlib for mac (required when using pyenv)
+if [ "OSTYPE" == "darwin"* ]; then
+    export LDFLAGS="-L/usr/local/opt/zlib/lib"
+    export CPPFLAGS="-l/usr/local/opt/zlib/include"
+fi

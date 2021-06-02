@@ -54,6 +54,12 @@ if command -v direnv 1>/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "/Users/macuser/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/macuser/Downloads/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "/Users/macuser/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/macuser/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
+
 # command aliases
 alias ..='cd ../'
 alias ls='ls'
