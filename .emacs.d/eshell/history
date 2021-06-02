@@ -1,0 +1,19 @@
+ll
+ls -a
+ll
+gs
+source ~/,bashrc
+source ~/.bashrc
+ll
+ll
+ls
+bash install.sh
+ls ~/
+ls ~/ -a
+cat ~/.zshrc
+cat ~/.zprofile
+rm ~/.zprofile
+ll
+ls ~/ -a
+cat ~/.zsh_history 
+exit
