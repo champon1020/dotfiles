@@ -77,5 +77,6 @@ alias opngen='sh /opt/openapi-generator/exec.sh'
 alias emacs="emacs -nw"
 alias texc="sh ~/.scripts/tex-compile.sh"
 alias emacsc="sh ~/.scripts/emacs-byte-compile.sh "
+alias gitbd="git branch --merged|egrep -v '\*|develop|main'|xargs git branch -d"
 
 neofetch
