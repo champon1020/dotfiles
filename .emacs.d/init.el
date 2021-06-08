@@ -92,17 +92,9 @@
 
   :config
   (add-to-list 'backup-directory-alist (cons "." "~/.emacs.new/backups/"))
-  ;;(global-display-line-numbers-mode)
 
   :mode-hook
   (before-save-hook . ((delete-trailing-whitespace))))
-
-
-;;(leaf nlinum
-;;  :doc "light weight linum mode"
-;;  :ensure t
-;;  :custom ((global-nlinum-mode . t)
-;;           (nlinum-format . "%3d ")))
 
 
 (leaf paren
