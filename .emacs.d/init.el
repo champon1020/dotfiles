@@ -113,11 +113,12 @@
   :config (load-theme 'ample-zen t))
 
 
-(leaf dired-quick-sort
-  :doc "Dired sort"
-  :ensure t
-  :custom ((dired-quick-sort-group-directories-last . ?y))
-  :config (dired-quick-sort-setup))
+(when (eq system-type 'gnu/linux)
+  (leaf dired-quick-sort
+    :doc "Dired sort"
+    :ensure t
+    :custom ((dired-quick-sort-group-directories-last . ?y))
+    :config (dired-quick-sort-setup)))
 
 
 (leaf flycheck
