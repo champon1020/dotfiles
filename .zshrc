@@ -63,7 +63,7 @@ if [ -f "/Users/macuser/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then .
 # command aliases
 alias ..='cd ../'
 alias ls='ls'
-alias ll='ls -aG'
+alias ll='ls -ag'
 alias grep='grep --color=auto'
 alias less='less'
 alias cat='cat'
